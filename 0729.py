@@ -1,33 +1,33 @@
-# import random
-#
-# # 第 1 題
-#
-# ANS = random.randint(1, 100)
-#
-#
-# def check(init, ans):
-#     if init < ans:
-#         return -1
-#     if init == ans:
-#         return 0
-#     if init > ans:
-#         return 1
-#
-#
-# i = 0
-# for i in range(5):
-#     outp = check(int(input('請猜數字(1~100),還剩%d次:' % (5 - i))), ANS)
-#     if (outp < 0):
-#         print("太小了!")
-#     elif (outp > 0):
-#         print("太大了!")
-#     else:
-#         break
-#
-# if i == 4:
-#     print("遊戲結束, 你失敗了")
-# else:
-#     print("恭喜猜對了~~")
+import random
+
+# 第 1 題
+
+ANS = random.randint(1, 100)
+
+
+def check(init, ans):
+    if init < ans:
+        return -1
+    if init == ans:
+        return 0
+    if init > ans:
+        return 1
+
+
+i = 0
+for i in range(5):
+    outp = check(int(input('請猜數字(1~100),還剩%d次:' % (5 - i))), ANS)
+    if (outp < 0):
+        print("太小了!")
+    elif (outp > 0):
+        print("太大了!")
+    else:
+        break
+
+if i == 4:
+    print("遊戲結束, 你失敗了")
+else:
+    print("恭喜猜對了~~")
 
 
 # 第 2 題
